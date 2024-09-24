@@ -1,0 +1,125 @@
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Slide Description Text Styling */
+.text {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* Slideshow Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: 0;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+/* Progress dots container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+}
+
+/* Dot styles */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active dot style */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #4caf50;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Responsive Slideshow */
+@media screen and (max-width: 768px) {
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .mySlides img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .prev, .next {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .dot-container {
+        padding: 15px;
+    }
+
+    .dot {
+        margin: 0 5px;
+    }
+
+    .text {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

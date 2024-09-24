@@ -1,0 +1,30 @@
+/* Footer */
+.site-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-cta {
+    padding: 10px;
+}
+
+.footer-cta .btn-primary {
+    background: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-cta .btn-primary:hover {
+    background: #ff4757;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+    .footer-cta .btn-primary {
+        padding: 8px 16px;
+    }
+}
