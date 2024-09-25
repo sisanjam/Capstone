@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home'
 import Forum from './pages/Forum';
 import Questionnaire from './pages/Questionnaire';
+import Quiz1 from './components/Quiz1';
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
     <Route index element = { <Home />} />
     <Route path ="/questionnaire" element = {<Questionnaire />} />
     <Route path ="/forum" element = {<Forum />} />
+    <Route path="/Quiz1" element={<Quiz1 />} />
   </Routes>
  </BrowserRouter>
 

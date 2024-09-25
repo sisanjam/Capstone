@@ -8,6 +8,7 @@ import quiz2 from "../assets/quiz2.jpg";
 import quiz3 from "../assets/quiz3.jpg";
 import quiz4 from "../assets/quiz4.jpg";
 import "../assets/questionare.css";
+import Quiz from "../components/Quiz1";
 
 export default function Questionnaire() {
   return (
@@ -15,8 +16,8 @@ export default function Questionnaire() {
       <Header />
       <section className="quiz-selection">
         <div className="quiz-container">
+          <img src={quiz1} alt="How well do you manage stress?" />
           <Link to="/Quiz1">
-            <img src={quiz1} alt="How well do you manage stress?" />
             <h3>How well do you manage stress?</h3>
           </Link>
         </div>
