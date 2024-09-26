@@ -1,6 +1,6 @@
 /* Footer */
 .site-footer {
-  background-color: #023e8a; /* Darker blue for footer */
+  background-color: #023e8a; 
   color: #fff;
   text-align: center;
   padding: 2rem 0;
@@ -8,14 +8,15 @@
 }
 
 .footer-cta .btn-primary {
-  background-color: #ff6b6b; /* Soft red call-to-action button */
+  background-color: #ff6b6b; 
   padding: 12px 24px;
   border-radius: 5px;
+  padding: auto;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .footer-cta .btn-primary:hover {
-  background-color: #d62828; /* Brighter hover effect */
+  background-color: #d62828; 
 }
