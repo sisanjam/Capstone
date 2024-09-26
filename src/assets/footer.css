@@ -1,17 +1,31 @@
 /* Footer */
 .site-footer {
-  background-color: #0077b6; /* bright blue for footer */
-  color: #fff;
+  background-color: #0077b6; /* Matching bright blue for footer */
+  color: white;
   text-align: center;
-  padding: 2px;
+  padding: 20px;
   margin-top: 2rem;
+  animation: fadeInUp 0.8s ease-out; /* Footer fade-in effect */
 }
 
-.footer{
-
-  color: white;
-  font-style:italic;
-  padding: 5px 10px 5px;
-  text-align: center;
+.footer {
+  font-style: italic;
   font-size: 16px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.footer:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

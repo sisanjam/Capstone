@@ -3,8 +3,7 @@ import "../assets/wiki.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import stress from "../assets/stress.jpg";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Wiki = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,17 +11,10 @@ const Wiki = () => {
   const handleSearch = (e) => {
     e.preventDefault(); // Prevent the default form submission
     if (searchTerm.trim()) {
-      // Redirect to Google search or Wikipedia
-      //const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(
-      // searchTerm
-      // )}`;
       const wikiSearchUrl = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(
         searchTerm
       )}`;
-
-      // Uncomment the next line to use Wikipedia search instead
-      //window.open(googleSearchUrl, "_blank");
-      window.open(wikiSearchUrl, "_blank");
+      window.open(wikiSearchUrl, "_blank"); // Open Wikipedia search in a new tab
     }
   };
 
@@ -32,14 +24,14 @@ const Wiki = () => {
       <section className="wiki-intro">
         <h1>Welcome to the MindReader Wiki</h1>
         <p>
-          Explore articles on mental health topics, definitions, learning about
-          strategies, or to find resources
+          Explore articles on mental health topics, definitions, strategies, or
+          find resources to help you learn and grow.
         </p>
         <div className="search-bar">
           <form onSubmit={handleSearch}>
             <input
               type="text"
-              placeholder="Search the Wikipedia"
+              placeholder="Search Wikipedia"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -57,11 +49,14 @@ const Wiki = () => {
             <i className="fas fa-brain fa-3x"></i>
             <h3>Understanding Mental Health</h3>
             <p>
-              Mental Health is something that we all might face one day, so it's
-              better to educate ourselves about what effects it could have on
-              the human body.
+              Mental health affects us all. Learn how it impacts the human body
+              and how to take care of it.
             </p>
-            <a href="https://cmha.ca/brochure/fast-facts-about-mental-illness/">
+            <a
+              href="https://cmha.ca/brochure/fast-facts-about-mental-illness/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Explore Category <i className="fas fa-arrow-right"></i>
             </a>
           </article>
@@ -72,7 +67,11 @@ const Wiki = () => {
               Discover effective self-care techniques to improve your mental
               well-being and manage stress.
             </p>
-            <a href="https://www.snhu.edu/about-us/newsroom/health/what-is-self-care">
+            <a
+              href="https://www.snhu.edu/about-us/newsroom/health/what-is-self-care"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Explore Category <i className="fas fa-arrow-right"></i>
             </a>
           </article>
@@ -80,10 +79,14 @@ const Wiki = () => {
             <i className="fas fa-hands-helping fa-3x"></i>
             <h3>Support & Resources</h3>
             <p>
-              Find support groups, helplines, and resources for getting help
-              with mental health challenges.
+              Find support groups, helplines, and resources for addressing
+              mental health challenges.
             </p>
-            <a href="https://ontario.cmha.ca/provincial-mental-health-supports/">
+            <a
+              href="https://ontario.cmha.ca/provincial-mental-health-supports/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Explore Category <i className="fas fa-arrow-right"></i>
             </a>
           </article>
@@ -94,7 +97,12 @@ const Wiki = () => {
         <h2>Featured Articles</h2>
         <div className="articles-grid">
           <article className="article-preview">
-            <img src = {stress} alt="Stress Management" height="30px"/>
+            <img
+              src={stress}
+              alt="Stress Management"
+              width="100%"
+              height="auto"
+            />
             <div className="article-content">
               <h3>Managing Stress</h3>
               <p>
@@ -107,7 +115,12 @@ const Wiki = () => {
             </div>
           </article>
           <article className="article-preview">
-            <img src="../images/anxiety.jpg" alt="Understanding Anxiety" />
+            <img
+              src={stress}
+              alt="Understanding Anxiety"
+              width="100%"
+              height="auto"
+            />
             <div className="article-content">
               <h3>Understanding Anxiety</h3>
               <p>
@@ -120,7 +133,12 @@ const Wiki = () => {
             </div>
           </article>
           <article className="article-preview">
-            <img src="../images/mindfulness.jpg" alt="Mindfulness Meditation" />
+            <img
+              src={stress}
+              alt="Mindfulness Meditation"
+              width="100%"
+              height="auto"
+            />
             <div className="article-content">
               <h3>Mindfulness Meditation</h3>
               <p>
