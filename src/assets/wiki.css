@@ -36,7 +36,7 @@ body {
 }
 
 .search-bar input {
-  width: 50%;
+  width: 65%;
   padding: 10px;
   border: none;
   border-radius: 20px 0 0 20px;
@@ -145,4 +145,11 @@ body {
 
 .article-content a:hover {
   text-decoration: underline;
+}
+
+.wiki-categories h2 {
+  font-size: 2em; /* Larger font size for the header */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center align the header */
+  margin-bottom: 20px; /* Space below the header */
 }
