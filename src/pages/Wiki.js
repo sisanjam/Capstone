@@ -3,6 +3,8 @@ import "../assets/wiki.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import stress from "../assets/stress.jpg";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Wiki = () => {
   const [searchTerm, setSearchTerm] = useState("");
