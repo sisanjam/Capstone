@@ -6,10 +6,8 @@ import '../assets/footer.css'
 const Footer = () => {
   return (
     <footer className="site-footer">
-      <p>Your Mental Health Companion</p>
-      <div className="footer-cta">
-        <a href="#emergency" className="btn btn-primary">Find Help Now</a>
-      </div>
+      <div className="footer">Your Mental Health Companion</div>
+      <div className="footer">@Copyright Mindreader 2024</div>
     </footer>
   );
 };
