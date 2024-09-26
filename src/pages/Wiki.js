@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../assets/wiki.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import stress from "../assets/stress.jpg";
 
 const Wiki = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -93,7 +94,7 @@ const Wiki = () => {
         <h2>Featured Articles</h2>
         <div className="articles-grid">
           <article className="article-preview">
-            <img src="../images/stress.jpg" alt="Stress Management" />
+            <img src = {stress} alt="Stress Management" height="30px"/>
             <div className="article-content">
               <h3>Managing Stress</h3>
               <p>

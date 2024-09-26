@@ -1,7 +1,7 @@
 /* Header and Navigation Adjustments */
 .site-header {
-  background-color: #0077b6; /* Bright blue header color */
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6)6; /* Bright blue header color */
+  color: white;
   padding: 1rem 0;
   position: fixed;
   width: 100%;
@@ -30,7 +30,7 @@
 }
 
 .navbar a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   padding: 0.5rem 1rem;
   margin-left: 10px;
@@ -46,7 +46,7 @@
 /* Dropdown Button Styling */
 .dropdown .dropbtn {
   background-color: transparent;
-  color: #fff;
+  color: black;
   font-size: 16px;
   padding: 0.5rem 1rem;
   margin-left: 10px;

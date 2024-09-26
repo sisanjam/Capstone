@@ -1,0 +1,108 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f0f0f0; /* Subtle background color to contrast the transparent sections */
+  }
+  
+  /* Mission Page Container */
+  .mission-page {
+    overflow-x: hidden;
+  }
+  
+  /* Section Styling with 3D Effect */
+  section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    min-width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for sections */
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* 3D effect with shadow */
+    backdrop-filter: blur(10px); /* Glassmorphism-like blur for extra style */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
+  }
+  
+  section:hover {
+    transform: translateY(-10px) scale(1.02); /* Lifts the section up slightly on hover for 3D effect */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  .intro-section {
+    background-color: rgba(243, 244, 247, 0.8); /* Transparent background */
+    color: #333;
+    text-align: center;
+  }
+  
+  .vision-section {
+    background-color: rgba(225, 232, 240, 0.8); /* Transparent background */
+    color: #333;
+    text-align: center;
+  }
+  
+  .focus-areas-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    color: #333;
+    text-align: left;
+  }
+  
+  .focus-areas-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .focus-areas-section ul li {
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  .cta-section {
+    background-color: rgba(243, 156, 18, 0.8); /* Transparent background with color */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .cta-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #f39c12;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    background: rgba(51, 51, 51, 0.9); /* Dark transparent footer */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  /* Scroll Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fadeIn 1s ease-in;
+  }
+  

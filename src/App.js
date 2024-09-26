@@ -8,6 +8,7 @@ import Quiz2 from "./components/Quiz2";
 import Quiz3 from "./components/Quiz3";
 import Quiz4 from "./components/Quiz4";
 import Wiki from "./pages/Wiki";
+import Mission from "./pages/Mission";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/Quiz2" element={<Quiz2 />} />
         <Route path="/Quiz3" element={<Quiz3 />} />
         <Route path="/Quiz4" element={<Quiz4 />} />
+        <Route path ="/mission" element={<Mission />} />
       </Routes>
     </BrowserRouter>
   );
