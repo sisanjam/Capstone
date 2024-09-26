@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../assets/wiki.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Wiki = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,16 +12,14 @@ const Wiki = () => {
     if (searchTerm.trim()) {
       // Redirect to Google search or Wikipedia
       //const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(
-       // searchTerm
-     // )}`;
+      // searchTerm
+      // )}`;
       const wikiSearchUrl = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(
         searchTerm
       )}`;
 
- 
-
       // Uncomment the next line to use Wikipedia search instead
-     //window.open(googleSearchUrl, "_blank");
+      //window.open(googleSearchUrl, "_blank");
       window.open(wikiSearchUrl, "_blank");
     }
   };
@@ -38,9 +37,9 @@ const Wiki = () => {
           <form onSubmit={handleSearch}>
             <input
               type="text"
-              placeholder="Search the wiki..."
+              placeholder="Search the Wikipedia"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)} // Update state on input change
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button type="submit">
               <i className="fas fa-search"></i>
@@ -60,7 +59,7 @@ const Wiki = () => {
               better to educate ourselves about what effects it could have on
               the human body.
             </p>
-            <a href="#">
+            <a href="https://cmha.ca/brochure/fast-facts-about-mental-illness/">
               Explore Category <i className="fas fa-arrow-right"></i>
             </a>
           </article>
@@ -71,7 +70,7 @@ const Wiki = () => {
               Discover effective self-care techniques to improve your mental
               well-being and manage stress.
             </p>
-            <a href="#">
+            <a href="https://www.snhu.edu/about-us/newsroom/health/what-is-self-care">
               Explore Category <i className="fas fa-arrow-right"></i>
             </a>
           </article>
@@ -82,7 +81,7 @@ const Wiki = () => {
               Find support groups, helplines, and resources for getting help
               with mental health challenges.
             </p>
-            <a href="#">
+            <a href="https://ontario.cmha.ca/provincial-mental-health-supports/">
               Explore Category <i className="fas fa-arrow-right"></i>
             </a>
           </article>
