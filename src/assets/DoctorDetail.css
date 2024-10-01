@@ -1,0 +1,59 @@
+/* DoctorDetails.css */
+
+.doctor-details {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-details h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.doctor-details p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.doctor-details form {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-details form div {
+  margin-bottom: 15px;
+}
+
+.doctor-details form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.doctor-details form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.doctor-details form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.doctor-details form button:hover {
+  background-color: #0056b3;
+}

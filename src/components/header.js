@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
-import logo from '../assets/logo.png';
-import '../assets/header.css'
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
+import logo from "../assets/logo.png";
+import "../assets/header.css";
 
 const Header = () => {
   return (
@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <Link to="/forum">Support Forum</Link>
           <Link to="/mission">Our Mission</Link>
-          <Link to="/emergency">Find Help Now</Link>
+          <Link to="/help">Find Help Now</Link>
         </div>
       </nav>
     </header>

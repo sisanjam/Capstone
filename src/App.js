@@ -9,6 +9,9 @@ import Quiz3 from "./components/Quiz3";
 import Quiz4 from "./components/Quiz4";
 import Wiki from "./pages/Wiki";
 import Mission from "./pages/Mission";
+import DoctorList from "./components/DoctorList";
+import DoctorDetails from "./components/DoctorDetails";
+import Help from "./pages/Help";
 
 const App = () => {
   return (
@@ -22,7 +25,10 @@ const App = () => {
         <Route path="/Quiz2" element={<Quiz2 />} />
         <Route path="/Quiz3" element={<Quiz3 />} />
         <Route path="/Quiz4" element={<Quiz4 />} />
-        <Route path ="/mission" element={<Mission />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/Help" element={<Help />} />
+        <Route path="/doctorlist" element={<DoctorList />} />{" "}
+        <Route path="/doctor/:id" element={<DoctorDetails />} />{" "}
       </Routes>
     </BrowserRouter>
   );
