@@ -20,7 +20,10 @@ const Header = () => {
           </div>
           <Link to="/forum">Support Forum</Link>
           <Link to="/mission">Our Mission</Link>
-          <Link to="/help">Find Help Now</Link>
+          <Link to="/help" className="find-help">
+            Find Help Now
+          </Link>{" "}
+          {/* Added a custom class */}
         </div>
       </nav>
     </header>

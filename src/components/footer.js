@@ -9,4 +9,13 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+const App = () => {
+  return (
+    <div id="page-container">
+      <div id="content-wrap">{/* Your page content goes here */}</div>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;

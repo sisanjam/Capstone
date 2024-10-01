@@ -1,11 +1,35 @@
+/* Ensure the body and html take up the full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for all the content */
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Main content area */
+#content-wrap {
+  flex: 0.7; /* This ensures the content area grows to take available space */
+  padding-bottom: 20px; /* Padding to prevent content from touching the footer */
+}
+
 /* Footer */
 .site-footer {
-  background-color: #0077b6; /* Matching bright blue for footer */
+  background-color: #0077b6;
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 2rem;
-  animation: fadeInUp 0.8s ease-out; /* Footer fade-in effect */
+  width: 100%; /* Ensure footer takes the full width */
+  position: relative;
+  bottom: 0;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .footer {
@@ -19,6 +43,7 @@
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
+/* Fade-in effect */
 @keyframes fadeInUp {
   from {
     opacity: 0;

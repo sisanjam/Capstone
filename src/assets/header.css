@@ -1,6 +1,6 @@
 /* Header and Navigation Adjustments */
 .site-header {
-  background-color: rgba(0, 0, 0, 0.6)6; /* Bright blue header color */
+  background-color: rgba(0, 0, 0, 0.6) 6; /* Bright blue header color */
   color: white;
   padding: 1rem 0;
   position: fixed;
@@ -112,7 +112,21 @@
 .navbar .btn-primary:hover {
   background-color: #ff4757; /* Darker red on hover */
 }
+.find-help {
+  background-color: #ff6b6b; /* Bright red container */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
 
+.find-help:hover {
+  background-color: #ff4757;
+  color: #fff;
+}
 /* Responsive Layout */
 @media screen and (max-width: 768px) {
   .navbar {
