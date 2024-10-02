@@ -5,7 +5,7 @@ html {
   padding: 0;
   font-family: "Arial", sans-serif;
   scroll-behavior: smooth;
-  background-color: #e9ecef; /* Light background for contrast */
+  background-color: #f4f7fa; /* Slightly lighter background for contrast */
   color: #333; /* More contrast for readability */
 }
 
@@ -20,50 +20,74 @@ a {
 
 /* Mission Page Container */
 .mission-page {
-  overflow-x: hidden;
-  padding: 0 15px; /* Adds padding for smaller screens */
+  padding: 0 30px; /* Increase padding for a more spacious look */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
 }
 
 /* Section Styling with 3D Effect */
 section {
-  padding: 80px 20px;
-  min-height: 100vh;
+  padding: 60px 20px; /* Reduced padding for better balance */
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.85); /* More opaque for readability */
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  backdrop-filter: blur(
-    12px
-  ); /* Slightly more pronounced blur for modern look */
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly opaque for readability */
+  border-radius: 10px; /* Softer border-radius for a balanced look */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  backdrop-filter: blur(8px); /* Light blur for modern look */
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 30px 0; /* Add more space between sections */
 }
 
 section:hover {
-  transform: translateY(-8px) scale(1.02); /* Subtle lift and scale on hover */
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+  transform: translateY(-5px) scale(1.01); /* Subtle lift on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect on hover */
 }
 
 /* Intro Section */
 .intro-section {
-  background-color: rgba(248, 249, 250, 0.9); /* Light and transparent */
-  color: #2c3e50; /* Darker text color for better contrast */
+  background-color: rgba(245, 246, 248, 0.9); /* Softer background */
+  color: #2c3e50; /* Darker text color */
   text-align: center;
+}
+
+.intro-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 1.2em;
+  line-height: 1.7;
 }
 
 /* Vision Section */
 .vision-section {
   background-color: rgba(
-    233,
+    230,
     236,
-    239,
+    240,
     0.9
-  ); /* Slightly darker background for contrast */
+  ); /* Lighter background for contrast */
   color: #2c3e50;
   text-align: center;
+}
+
+.vision-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.vision-section p,
+.vision-section .goals p {
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 /* Focus Areas Section */
@@ -73,37 +97,48 @@ section:hover {
   text-align: left;
 }
 
+.focus-areas-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.focus-areas-section h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.focus-areas-section p {
+  font-size: 1.1em;
+  line-height: 1.7; /* Better readability */
+}
+
 .focus-areas-section ul {
   list-style: none;
   padding: 0;
 }
 
-.focus-areas-section ul li {
-  margin: 20px 0;
-  font-size: 1.15em;
-  line-height: 1.6; /* Improved readability */
-}
-
 /* Call-to-Action Section */
 .cta-section {
-  background-color: rgba(243, 156, 18, 0.85);
+  background-color: #f39c12;
   color: #fff;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .cta-button {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #fff;
   color: #e67e22;
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.1em;
+  margin-top: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #2c3e50;
+  background-color: #e67e22;
   color: #fff;
 }
 
@@ -116,49 +151,16 @@ section:hover {
   font-size: 0.9em;
 }
 
-/* Scroll Animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Footer Text */
+.footer-section p {
+  margin: 0;
+  font-size: 1.1em;
 }
 
-section {
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  section {
-    padding: 60px 15px;
-  }
-
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: 50px 10px;
-  }
-
-  .cta-button {
-    padding: 8px 18px;
-    font-size: 0.95em;
-  }
-}
-/* Social Media Buttons */
 .social-media-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px; /* Increase gap for better spacing */
   margin-top: 20px;
 }
 
@@ -168,15 +170,10 @@ section {
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 30px;
-  text-decoration: none;
   color: #333;
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.social-button svg {
-  margin-right: 10px;
 }
 
 .social-button.instagram {
@@ -195,5 +192,52 @@ section {
 }
 
 .social-button:hover {
-  opacity: 0.8;
+  opacity: 0.85; /* Subtle hover effect */
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-page {
+    padding: 0 15px;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-page {
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  .cta-button {
+    padding: 8px 18px;
+    font-size: 0.95em;
+  }
 }
