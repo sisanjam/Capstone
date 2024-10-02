@@ -10,9 +10,9 @@ export default function Home()
         <>
         <Header>
         </Header>
-
-        <Slideshow></Slideshow>
         <Chatbot></Chatbot>
+        <Slideshow></Slideshow>
+   
         <Footer></Footer>
         
         </>

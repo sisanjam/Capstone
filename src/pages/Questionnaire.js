@@ -16,9 +16,9 @@ export default function Questionnaire() {
       <Header />
       <section className="quiz-selection">
         <div className="quiz-container">
-        <Link to="/Quiz1">
-          <img src={quiz1} alt="How well do you manage stress?" />
-          
+          <Link to="/Quiz1">
+            <img src={quiz1} alt="How well do you manage stress?" />
+
             <h3>How well do you manage stress?</h3>
           </Link>
         </div>
@@ -45,7 +45,6 @@ export default function Questionnaire() {
         </div>
       </section>
 
-      <Chatbot />
       <Footer />
     </>
   );

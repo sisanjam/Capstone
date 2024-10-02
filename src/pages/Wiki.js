@@ -3,6 +3,8 @@ import "../assets/wiki.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import stress from "../assets/stress.jpg";
+import Meditation from "../assets/Meditation.jpg";
+import Anxiety from "../assets/Anxiety.jpg";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Wiki = () => {
@@ -109,14 +111,14 @@ const Wiki = () => {
                 Learn effective techniques to manage day-to-day stress and
                 improve your wellbeing.
               </p>
-              <a href="#">
+              <a href="https://www.verywellmind.com/tips-to-reduce-stress-3145195">
                 Read More <i className="fas fa-arrow-right"></i>
               </a>
             </div>
           </article>
           <article className="article-preview">
             <img
-              src={stress}
+              src={Anxiety}
               alt="Understanding Anxiety"
               width="100%"
               height="auto"
@@ -127,14 +129,14 @@ const Wiki = () => {
                 Gain insights into the symptoms, causes, and treatments for
                 anxiety disorders.
               </p>
-              <a href="#">
+              <a href="https://www.verywellmind.com/anxiety-disorder-2510539">
                 Read More <i className="fas fa-arrow-right"></i>
               </a>
             </div>
           </article>
           <article className="article-preview">
             <img
-              src={stress}
+              src={Meditation}
               alt="Mindfulness Meditation"
               width="100%"
               height="auto"
@@ -145,7 +147,7 @@ const Wiki = () => {
                 Discover the benefits of mindfulness and learn how to
                 incorporate it into your daily life.
               </p>
-              <a href="#">
+              <a href="https://www.verywellmind.com/mindfulness-the-health-and-stress-relief-benefits-3145189">
                 Read More <i className="fas fa-arrow-right"></i>
               </a>
             </div>
