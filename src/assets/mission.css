@@ -160,7 +160,7 @@ section:hover {
 .social-media-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Increase gap for better spacing */
+  gap: 50px; /* Increase gap for better spacing */
   margin-top: 20px;
 }
 

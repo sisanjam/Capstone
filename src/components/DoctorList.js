@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Modal from "./Modal"; // Import the Modal component
+import Modal from "./Modal";
 
 const doctors = [
   { id: 1, name: "Dr. John Doe", specialization: "Cardiologist" },
   { id: 2, name: "Dr. Jane Smith", specialization: "Dermatologist" },
-  // Add more doctors...
 ];
 
 const DoctorList = () => {
@@ -22,7 +21,6 @@ const DoctorList = () => {
   };
 
   const handleSubmitAppointment = (formData) => {
-    // Here you can handle sending the form data (e.g., via EmailJS or your backend)
     console.log("Form data submitted:", formData);
   };
 
