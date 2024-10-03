@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import emailjs from "emailjs-com"; // EmailJS or another email service
+import emailjs from "emailjs-com"; 
 
 const doctors = [
   {

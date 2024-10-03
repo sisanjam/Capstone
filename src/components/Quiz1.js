@@ -27,17 +27,6 @@ const quizQuestions = [
     ],
   },
   {
-    question: "Do you feel irritable or easily frustrated when stressed?",
-    type: "multiple",
-    options: [
-      { text: "Never", points: 0, followUp: 3 },
-      { text: "Rarely", points: 1, followUp: 3 },
-      { text: "Sometimes", points: 2, followUp: 3 },
-      { text: "Often", points: 3, followUp: 3 },
-      { text: "Always", points: 4, followUp: 3 },
-    ],
-  },
-  {
     question: "How do you typically cope with stress?",
     type: "text",
     followUp: 4,
@@ -46,36 +35,6 @@ const quizQuestions = [
     question: "What activities help you relax and reduce stress?",
     type: "text",
     followUp: 5,
-  },
-  {
-    question: "Do you have a support system to help you manage stress?",
-    type: "multiple",
-    options: [
-      { text: "Yes, a strong support system", points: 0, followUp: 6 },
-      { text: "Yes, but I could use more support", points: 2, followUp: 6 },
-      { text: "No, I don't have a support system", points: 4, followUp: 6 },
-    ],
-  },
-  {
-    question:
-      "How often do you make time for self-care and stress-reducing activities?",
-    type: "multiple",
-    options: [
-      { text: "Regularly", points: 0, followUp: 7 },
-      { text: "Occasionally", points: 2, followUp: 7 },
-      { text: "Rarely", points: 3, followUp: 7 },
-      { text: "Never", points: 4, followUp: 7 },
-    ],
-  },
-  {
-    question:
-      "Are you open to seeking professional help to manage stress if needed?",
-    type: "multiple",
-    options: [
-      { text: "Yes", points: 0, followUp: 9 },
-      { text: "Maybe", points: 2, followUp: 9 },
-      { text: "No", points: 4, followUp: 8 },
-    ],
   },
   {
     question:
@@ -155,7 +114,7 @@ const Quiz1 = () => {
 
         setTotalPoints((prevPoints) => prevPoints + points);
         handleFollowUp(followUp);
-        setSelectedOption(null); // Reset selected option after submission
+        setSelectedOption(null); 
       } else {
         alert("Please select an option.");
       }
@@ -165,7 +124,7 @@ const Quiz1 = () => {
     if (question.type === "text") {
       if (textAnswer.trim() !== "") {
         handleFollowUp(question.followUp);
-        setTextAnswer(""); // Clear the text input after submission
+        setTextAnswer(""); 
       } else {
         alert("Please enter your answer.");
       }

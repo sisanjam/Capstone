@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../assets/Modal.css";
 
 const Modal = ({ show, onClose, doctor, onSubmit }) => {
-  // React Hook useState must be at the top level
   const [formData, setFormData] = useState({
     name: "",
     age: "",

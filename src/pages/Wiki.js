@@ -11,12 +11,12 @@ const Wiki = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (e) => {
-    e.preventDefault(); // Prevent the default form submission
+    e.preventDefault(); 
     if (searchTerm.trim()) {
       const wikiSearchUrl = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(
         searchTerm
       )}`;
-      window.open(wikiSearchUrl, "_blank"); // Open Wikipedia search in a new tab
+      window.open(wikiSearchUrl, "_blank"); 
     }
   };
 
