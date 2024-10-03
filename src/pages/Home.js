@@ -12,9 +12,7 @@ export default function Home()
         </Header>
         <Chatbot></Chatbot>
         <Slideshow></Slideshow>
-   
         <Footer></Footer>
-        
         </>
 
     )

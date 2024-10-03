@@ -138,7 +138,7 @@ const Mission = () => {
                 rel="noopener noreferrer"
                 className="social-button instagram"
               >
-                <i className="fab fa-instagram"></i> Instagram
+                <i className="fab fa-instagram" style={{paddingRight: 5 + 'px'}}></i> Instagram
               </a>
               <a
                 href="https://www.facebook.com"
@@ -146,7 +146,7 @@ const Mission = () => {
                 rel="noopener noreferrer"
                 className="social-button facebook"
               >
-                <i className="fab fa-facebook"></i> Facebook
+                <i className="fab fa-facebook" style={{paddingRight: 5 + 'px'}}></i> Facebook
               </a>
               <a
                 href="https://www.twitter.com"
@@ -154,7 +154,7 @@ const Mission = () => {
                 rel="noopener noreferrer"
                 className="social-button twitter"
               >
-                <i className="fab fa-twitter"></i> Twitter
+                <i className="fab fa-twitter" style={{paddingRight: 5 + 'px'}}></i> Twitter
               </a>
             </div>
           </div>
