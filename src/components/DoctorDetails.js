@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com";
 
 const doctors = [
   {
@@ -30,12 +30,16 @@ const DoctorDetails = () => {
     email: "",
   });
 
+  const [showSuccess, setShowSuccess] = useState(false); // State to handle success message
+  const [loading, setLoading] = useState(false); // State to handle form loading
+
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true); // Start loading when email is being sent
     sendEmail();
   };
 
@@ -52,19 +56,26 @@ const DoctorDetails = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_q791zda",
+        "template_25sjokp",
         templateParams,
-        "YOUR_USER_ID"
+        "fW4dKdzpptuR1iBCP"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          setLoading(false);
+          setShowSuccess(true); // Show success message
         },
         (err) => {
           console.log("FAILED...", err);
+          setLoading(false); // Stop loading on failure
         }
       );
+  };
+
+  const handleCloseSuccess = () => {
+    setShowSuccess(false); // Close the success message
   };
 
   return (
@@ -124,8 +135,17 @@ const DoctorDetails = () => {
             required
           />
         </div>
-        <button type="submit">Book Appointment</button>
+        <button type="submit" disabled={loading}>
+          {loading ? "Booking..." : "Book Appointment"}
+        </button>
       </form>
+
+      {showSuccess && (
+        <div className="success-popup">
+          <p>Your appointment is booked successfully!</p>
+          <button onClick={handleCloseSuccess}>Close</button>
+        </div>
+      )}
     </div>
   );
 };
