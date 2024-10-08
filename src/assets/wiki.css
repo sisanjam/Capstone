@@ -22,6 +22,7 @@ body {
   height: 100vh;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
+  text-align: center; /* Center text for mobile readability */
 }
 
 .wiki-intro h1 {
@@ -39,6 +40,7 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 500px;
+  flex-wrap: wrap; /* Allow inputs to stack on smaller screens */
 }
 
 .search-bar input {
@@ -64,7 +66,7 @@ body {
 
 /* Wiki Categories Section */
 .wiki-categories {
-  padding: 60px 40px;
+  padding: 60px 20px; /* Adjusted padding for smaller screens */
 }
 
 .categories-list {
@@ -115,7 +117,7 @@ body {
 
 /* Featured Articles Section */
 .featured-articles {
-  padding: 60px 40px;
+  padding: 60px 20px; /* Adjusted padding for smaller screens */
   background: #fff;
 }
 
@@ -124,7 +126,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-top: 40px; /* This adds space above the grid */
+  margin-top: 40px;
 }
 
 .article-preview {
@@ -136,7 +138,7 @@ body {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  margin-bottom: 40px; /* This adds space below each article box */
+  margin-bottom: 40px;
 }
 
 .article-preview:hover {
@@ -156,26 +158,98 @@ body {
 }
 
 .article-content h3 {
-  margin-bottom: 10px; /* Increased margin for better spacing */
-  font-size: 1.5rem; /* Larger font size */
-  font-weight: 700; /* Bolder text */
-  color: #333; /* Darker text for better contrast */
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
 }
 
 .article-content p {
-  margin-bottom: 15px; /* Adjusted for better spacing */
-  font-size: 1rem; /* Standard paragraph size */
-  line-height: 1.6; /* Increased line height for readability */
-  color: #555; /* Softer color for a subtle look */
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
 }
 
 .article-content a {
   color: #764ba2;
   text-decoration: none;
-  font-weight: 600; /* Slightly bolder */
-  font-size: 1.1rem; /* Slightly larger link text */
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .article-content a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust the wiki intro section for smaller screens */
+  .wiki-intro {
+    padding: 80px 20px;
+    height: auto; /* Remove fixed height for better mobile adaptability */
+  }
+
+  .wiki-intro h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .wiki-intro p {
+    font-size: 1.1rem;
+  }
+
+  /* Search bar stacking on small screens */
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 10px; /* Add spacing when stacked */
+    border-radius: 20px; /* Full border-radius when stacked */
+  }
+
+  .search-bar button {
+    width: 100%;
+    border-radius: 20px; /* Rounded corners for better aesthetics on mobile */
+  }
+
+  /* Adjust categories section */
+  .category {
+    flex-basis: 100%; /* Full width on smaller screens */
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .wiki-intro {
+    padding: 60px 10px;
+  }
+
+  .wiki-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .wiki-intro p {
+    font-size: 1rem;
+  }
+
+  /* Adjust featured articles for small screens */
+  .article-preview {
+    flex-basis: 100%; /* Full width on very small screens */
+    padding: 20px;
+  }
+
+  .articles-grid {
+    gap: 20px;
+  }
+
+  .article-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .article-content p {
+    font-size: 0.95rem;
+  }
+
+  .article-content a {
+    font-size: 1rem;
+  }
 }

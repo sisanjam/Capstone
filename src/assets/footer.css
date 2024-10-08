@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* Ensure footer is placed properly */
+  position: fixed; /* Ensure footer is placed properly */
   bottom: 0;
   margin-top: auto; /* Pushes footer to the bottom only when there's little content */
 }
@@ -103,5 +103,21 @@ body {
 
   .footer-social-links a {
     font-size: 1.2em; /* Adjust icon size on very small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 20px 10px; /* Adjust padding for mobile */
+    font-size: 0.9rem; /* Slightly smaller text size */
+  }
+
+  .footer-social-links {
+    flex-direction: column; /* Stack icons vertically */
+    gap: 10px; /* Reduce gap between icons */
+  }
+
+  .footer-social-links a {
+    font-size: 1.3rem; /* Reduce size of social media icons */
   }
 }

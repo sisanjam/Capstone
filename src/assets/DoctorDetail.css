@@ -1,96 +1,103 @@
 /* DoctorDetails.css */
 
 .doctor-details {
-  max-width: 500px; /* Slightly reduced width for a more compact, centered layout */
-  margin: 80px auto; /* Increased margin to provide more spacing from the top */
-  background-color: #fff;
-  padding: 40px; /* Increased padding for more spacious layout */
-  border-radius: 12px; /* Slightly larger rounded corners for a modern look */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer and more prominent shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition effects */
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .doctor-details:hover {
-  transform: scale(1.02); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover for emphasis */
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .doctor-details h1 {
-  margin-bottom: 15px; /* Slightly increased margin for better spacing */
-  font-size: 2.2rem; /* Increased font size for emphasis */
-  color: #222; /* Darker color for better contrast */
-  text-align: center; /* Center the heading */
-  font-weight: 700; /* Make heading bold */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  text-align: center;
+  font-weight: 800;
 }
 
 .doctor-details p {
-  font-size: 1.1rem; /* Adjust font size for balance */
-  color: #666; /* Softer color for text */
-  margin-bottom: 25px; /* Increased margin for better spacing below the text */
-  text-align: center; /* Center the paragraph text */
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .doctor-details form {
   display: flex;
   flex-direction: column;
-}
-
-.doctor-details form div {
-  margin-bottom: 20px; /* More spacing between input fields */
+  gap: 20px;
 }
 
 .doctor-details form label {
-  font-size: 1.1rem; /* Slightly larger font size for labels */
-  margin-bottom: 8px; /* Increased margin for better spacing */
-  color: #333; /* Consistent color with the heading */
-  font-weight: 500; /* Make label text slightly bolder */
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
 }
 
 .doctor-details form input,
 .doctor-details form select {
-  padding: 12px; /* Increased padding for better usability */
+  padding: 14px;
   font-size: 1rem;
-  border-radius: 8px; /* Larger radius for a modern touch */
-  border: 1px solid #ddd; /* Softer border color */
+  border-radius: 10px;
+  border: 1px solid #ddd;
   width: 100%;
   box-sizing: border-box;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for focus effects */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .doctor-details form input:focus,
 .doctor-details form select:focus {
-  border-color: #007bff; /* Blue border on focus */
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Soft blue shadow on focus */
-  outline: none; /* Remove default outline */
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  outline: none;
 }
 
-.doctor-details form button {
-  padding: 12px 18px; /* Slightly larger padding for a better button feel */
-  font-size: 1.1rem;
-  background-color: #007bff; /* Bright blue button */
+/* Styling both buttons with consistent design */
+.doctor-details form button,
+.doctor-details .close-btn {
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 8px; /* Larger border radius for a modern button design */
+  border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.doctor-details form button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: translateY(-2px); /* Slight upward movement on hover */
+.doctor-details form button:hover,
+.doctor-details .close-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
 }
 
+/* Specific styling for the Close button */
 .doctor-details .close-btn {
-  background-color: #f44336; /* Red close button */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #f44336;
+  margin-top: 20px;
 }
 
 .doctor-details .close-btn:hover {
-  background-color: #d32f2f; /* Darker red on hover */
+  background-color: #d32f2f;
+}
+
+/* Center the buttons */
+.doctor-details form button {
+  margin-top: 10px;
+  align-self: center;
+}
+
+.doctor-details .close-btn {
+  margin-top: 10px;
+  align-self: center;
 }

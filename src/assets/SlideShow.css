@@ -113,3 +113,20 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    padding: 1rem 0; /* Reduce padding for mobile */
+    margin-top: 80px; /* Adjust margin */
+  }
+
+  .mySlides img {
+    max-height: 250px; /* Limit image height for mobile */
+    object-fit: cover; /* Ensure it scales properly */
+  }
+
+  .text {
+    font-size: 1rem; /* Smaller text on mobile */
+    padding: 10px; /* Adjust padding */
+  }
+}

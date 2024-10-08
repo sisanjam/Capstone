@@ -8,8 +8,34 @@
   background-color: #fff;
   display: flex;
   flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Space items evenly */
-  height: 300px; /* Set fixed height */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  height: auto; /* Allow height to adjust to content */
+  max-width: 100%; /* Prevent the container from stretching too wide */
+}
+
+.quiz-container img {
+  width: 100%;
+  height: auto; /* Ensure dynamic height based on the image */
+  object-fit: cover;
+  display: block;
+  margin: 0; /* Remove any default margins */
+}
+
+.quiz-container h3 {
+  padding: 0.8rem;
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding does not add extra size */
 }
 
 .quiz-container:hover {
@@ -17,66 +43,15 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Quiz Selection Grid */
-.quiz-selection {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1.5rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 3rem auto;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-/* Quiz Images */
-.quiz-container img {
-  width: 100%;
-  height: 130px; /* Set image height */
-  object-fit: cover; /* Cover the container without distortion */
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
 .quiz-container:hover img {
   transform: scale(1.05);
   filter: brightness(0.9);
 }
 
-/* Quiz Title */
-.quiz-container h3 {
-  padding: 0.8rem;
-  text-align: center;
-  background-color: #f7f7f7;
-  color: #333;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  position: relative;
-  flex-grow: 1; /* Make the title take up remaining space */
-}
-
-.quiz-container h3:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.quiz-container:hover h3:before {
-  width: 100%;
-  left: 0;
-}
-
 .quiz-container:hover h3 {
   color: #007bff;
-  transform: translateY(-3px);
 }
 
-/* Buttons */
 .btn {
   background: #007bff;
   color: #fff;
@@ -86,13 +61,19 @@
   display: inline-block;
   font-size: 0.9rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  align-self: center; /* Center the button */
-  margin-bottom: 10px; /* Space from the bottom */
+  align-self: center;
+  margin-bottom: 10px;
 }
 
-.btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+/* Grid container for quiz items */
+.quiz-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  justify-items: center; /* Center items in the grid */
 }
 
 /* Responsive Design */
